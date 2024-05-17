@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="icon"
+      href="https://cdn.glitch.global/d8bcccd1-07e6-41ff-82a0-7c7e679fac69/costume1%20(5).svg?v=1715088028050"
+    />
+
+    <title>No More Ugly Websites</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <meta
+      name="description"
+      content="Welcome to NoMoreUglyWebsites: A guide to making better websites. From colors to rounded edges, this guide will teach you how to make better websites!"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <style>pre, code {font-family: monospace}</style>
+  </head>
+  <body>
+    <style>h1, i, p, b li, hr, strong, ul {opacity: 0;transition: opacity .25s, filter .25s;filter: blur(2px)}</style>
+    <article>
+      <header>
+        <h1>No more <i style="color: red;">ugly websites</i></h1>
+        <p>Your guide to making better websites.</p>
+        <ul class="guides">
+           <li><span class="loading" style="--w: 100px;--h: 20px;margin:0px;"></span></li>
+          <li><span class="loading" style="--w: 40px;--h: 20px;margin:0px;"></span></li>
+          <li><span class="loading" style="--w: 60px;--h: 20px;margin:0px;"></span></li>
+        </ul>
+      </header>
+      <main>
+        <p>
+          Websites are all around us, from the way we shop, to playing games. It
+          is key for you to have a good website in a world where most websites
+          are, well, ugly. It is like having a good resume in a sea of bad ones.
+          It will stand out.
+        </p>
+        <p>
+          This is a group of guides that will teach you how to make your website <b>better</b>.
+        </p>
+        <p class="madeby">
+          Made by <a href="https://mileswk.glitch.me/" target="_blank">MilesWK</a> and <a href="https://tiagorangel.com" target="_blank">Tiago Rangel</a>
+        </p>
+      </main>
+    </article>
+  </body>
+  <script>
+  async function main() {
+    let delay = 300;
+    document.querySelectorAll("header, h1, i, p, b li, hr, strong, ul").forEach(e => {
+      
+      setTimeout(function () {
+        e.style.opacity = "1";
+        e.style.filter = "none"
+      }, delay)
+      delay = delay + 200;
+    })
+    
+    const list = (await (await fetch("/guides/_list.md")).text()).split("\n");
+    let html = "";
+    list.forEach((el) => {
+      html = html + `<li><a href="/guide.html?guide=${el.split(" / ")[0]}">${el.split(" / ")[1]}</a></li>`
+    })
+    document.querySelector(".guides").innerHTML = html;
+  }
+    main();
+  </script>
+</html>

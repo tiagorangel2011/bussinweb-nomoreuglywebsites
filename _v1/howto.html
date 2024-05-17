@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="https://cdn.glitch.global/d8bcccd1-07e6-41ff-82a0-7c7e679fac69/costume1%20(5).svg?v=1715088028050" />
+
+    <title>No More Ugly Websites - The Guide</title>
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+  </head>
+  <body>
+    
+    <!-- Header -->
+    
+    <h1>
+      Making a better website
+    </h1>
+    <div class="line2">
+      
+    </div>
+    <!-- Main Website -->
+    
+    <div id="website">
+      
+      <h1>
+        1. No More Bright Colors
+      </h1>
+      <p>
+        Bright colors with bright text, such as <span style="color: white; background-color: yellow; border-radius: 4px; padding: 3px;">
+      Yellow with white text
+      </span> or dark colors with dark text, such as <span style="background-color: blue; border-radius: 4px; padding: 3px;">
+      blue with black text
+      </span>, can really make a website unattractive. If you wanted white text, you could use <span style="color: white; background-color: darkblue; border-radius: 4px; padding: 3px;">
+      Dark Blue With White
+      </span>, or <span style="background-color: yellow; border-radius: 4px; padding: 3px;">
+      Yellow with black
+      </span>, but beware: to much yellow can make a website hurt the viewers eyes, and dark blue with white can also look bad. So for a light-themed website, you would want something like <span style="background-color: #90b6df; border-radius: 4px; padding: 3px;">
+      <b>#90b6df</b> With black text
+      </span>, is way less harsh then some of the other things we have talked about.
+      </p>
+      <div class="line2"></div>
+      
+      <h1>
+        2. No More Straight Edges
+      </h1>
+      <p>
+        Let's say you have a fun DIV element with text in the center:
+
+        <div class="ExampleDiv">
+          My #90b6df Background!
+        </div>
+        This already looks great, but we can make it better with the <code>border-radius:</code> CSS Element. If we set the border radius to 10px, or DIV element looks like such:
+    
+        <div class="ExampleDiv" style="border-radius: 10px;">
+          My #90b6df Background!
+        </div>
+        Much better! Just for fun, let's set it to <b>100%</b>...
+        <div class="ExampleDiv" style="border-radius: 100%;">
+          My #90b6df Background!
+        </div>
+        Ewww....... So keep it small, ranging from 3px - 10px for rounded edges!
+        <div class="line2"></div>
+      </p>
+      <h1>
+        3. No More Default Buttons
+      </h1>
+      <p>
+          So, we don't want default buttons like this one: <button>
+          Click me!</button> Because they are kind of basic. Now, if we took our element, it could already be a button:
+
+        <div class="ExampleDiv" style="border-radius: 10px;" onclick="alert('CLICKED!!')">
+            <p>
+              Me? A button?
+          </p>
+          </div>
+        Now, belive it or not, that actually does something when clicked... but how would you know? When you hover over it, nothing changes. Let's fix that. Let's just make it spin when you hover over it:
+        <div class="ExampleDiv spin" style="border-radius: 10px;" onclick="alert('CLICKED!!')">
+            <p>
+              Me? A button?
+          </p>
+          </div>
+        <div style="height: 40px;">
+
+          That is actually pretty good, but if we use <code>cursor: pointer</code> CSS element, it will be a TRUE button:
+        </div>
+        <div class="ExampleDiv spin" style="border-radius: 10px; cursor: pointer;" onclick="alert('CLICKED!!')">
+            <p>
+              CLICK ME!!!!
+          </p>
+          </div>
+        <div style="height: 40px;"></div>
+        Great! So now, we have a fancy button! However, we have a button, not a background. Our #90b6df background... isn't vibrant. You want people to CLICK your button. So lets change that.
+        Let's try <code>limegreen</code>:
+        <div class="ExampleDiv spin" style="background-color: limegreen; border-radius: 10px; cursor: pointer;" onclick="alert('CLICKED!!')">
+            <p>
+              CLICK ME!!!!
+          </p>
+          </div>
+        Better, but we want the button to stand out... litterally... we want it to be slightly off the page. To do this, we will use <code>box-shadow</code>
+              <div class="ExampleDiv spin" style="background-color: limegreen; box-shadow: 3px 2px 2px 1px rgb(0 0 0 / 40%); border-radius: 10px; cursor: pointer;" onclick="alert('CLICKED!!')">
+            <p>
+              CLICK ME!!!!
+          </p>
+          </div>
+          Great. The spin is good, however, the animation makes the button hard to click, so I am going to edit the animation to make the shadow change:
+           <div class="ExampleDiv spin2" style="background-color: limegreen; box-shadow: 3px 2px 2px 1px rgb(0 0 0 / 40%); border-radius: 10px; cursor: pointer;" onclick="alert('CLICKED!!')">
+            <p>
+              CLICK ME!!!!
+          </p>
+          </div>
+    This is just some basics to make your websites SIGNIFICANTLY better than many other websites.</p>
+      <br /><br /><a class="home" href="https://nomoreuglywebsites.glitch.me/">Home</a>
+      <br /><br />
+      <br /><br />
+      <br /><br />
+      <i><p>
+      This page is not complete. There will be more soon with more code. 
+      </p></i>
+  
+  
+  <!-- End Website -->
+    </div>
+  </body>
+</html>

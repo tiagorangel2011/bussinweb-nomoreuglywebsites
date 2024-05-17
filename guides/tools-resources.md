@@ -1,3 +1,6 @@
+<h1>
+  Tools and resourced
+</h1>
 Animating elements can be a big help, so MilesWK from the NoMoreUglyWebsites team published <a style="color: blue;" href="https://support.glitch.com/t/css-animations-parts-1-3-navigation">these tutorials</a> that teach you how to make CSS animations from scratch.
 
 Another powerful tool is the ability to animate things on scroll. The <a style="color: blue;" href="https://michalsnik.github.io/aos/">AOS Library</a> is a simple tool allowing you to do just that, but if you really want to get super fancy I would recommend checking out Framer.
